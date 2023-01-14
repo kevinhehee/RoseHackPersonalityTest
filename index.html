@@ -2,6 +2,77 @@
 <html>
 <head>
 
-  <link rel="stylesheet" href = "styles.css">
-  <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width">
 </head>
+
+
+<link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+
+
+
+
+<video autoplay muted loop id="rainbackground">
+
+    <source src="rainywindowUHD.mp4" type="video/mp4" style="z-index:0" />
+
+</video>
+
+<div class="content" id="pausebutton">
+    <button id="myBtn" onclick="myFunction()"> <img src="icons/pause.png" style="width: 40px; height: 40px"></button>
+</div>
+
+
+
+
+<script>
+  var video = document.getElementById("rainbackground");
+
+  var btn = document.getElementById("myBtn");
+
+  function myFunction()
+  {
+    if (video.paused)
+    {
+      video.play();
+      btn.innerHTML = "<img src = \"icons/pause.png\" width = \"40px\" height= \"40px\">";
+    }
+    else
+    {
+      video.pause();
+      btn.innerHTML = "<img src=\"icons/play.png\" width=\"40px\" height=\"40x\">";
+    }
+  }
+</script>
+
+
+
+
+
+
+<div class="textbox">
+    <h1>Rose Hack</Head></h1>
+    <br>
+    <h1>Code Goats</h1>
+
+</div>
+
+
+
+<br>
+<br>
+
+<b1 class="textbox2">Welcome to CODE GOAT'S Flower Me Quiz'.</b1>
+
+<br>
+
+<b1 class="textbox2">blah blah<br> </b1>
+
+
+
+
+
+
+
+
+</html>
